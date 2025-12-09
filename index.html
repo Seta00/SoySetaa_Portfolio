@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio 2D/3D</title>
+<script src="https://kit.fontawesome.com/f4e8088f37.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+
+  <script type='text/javascript' src='Jquerry/unitegallery-master/unitegallery-master/dist/js/jquery-11.0.min.js'></script> 
+  <script type='text/javascript' src='Jquerry/unitegallery-master/unitegallery-master/dist/js/unitegallery.min.js'></script>  
+
+  <link rel='stylesheet' href='Jquerry/unitegallery-master/unitegallery-master/dist/css/unite-gallery.css' type='text/css' />
+  
+  <script type='text/javascript' src='Jquerry/unitegallery-master/unitegallery-master/dist/themes/tiles/ug-theme-tiles.js'></script>
+
+  <script type='text/javascript' src='Jquerry/unitegallery-master/unitegallery-master/dist/themes/compact/ug-theme-compact.js'></script>
+
+
+  
+</head>
+
+
+<style type="text/css">
+  *{
+    scroll-behavior: smooth; 
+  }
+  body {
+    min-width: 400px;
+    background-color: #000000;
+    margin: 0 5vh;
+   /* margin: 0;*/
+    padding: 0;
+  }
+
+  .content-wrapper {
+   /* max-width: 1400px;*/
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-bottom: 3vh;
+
+
+  }
+
+  .Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+
+  .Galeria1 {
+    width: 90%;
+    height: 80vh;
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    margin-top: 3vh;
+
+  }
+
+  .Galeria2 {
+    width: 90%;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    margin-bottom: 5vh;
+
+  }
+
+  .seccion1 h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  .seccion1 h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.75rem;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .seccion1 p, .seccion1 div.Texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.4;
+  }
+
+  #gallery2 {
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+
+ .seccion3DC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+
+.personaje {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: #ffffff;
+  }
+
+  .BloqueP1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+  }
+
+.NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  }
+
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 2.4;
+    transition: all 1s ease;
+  }
+
+  .fotoP1:hover {
+    background-image: url('img/3d/EveC.png');
+    
+  }
+
+  .GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh
+  }
+
+  .GaleriaB12 {
+   /* flex: 0.06;*/
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    background-color: #000000;
+    margin: 0 auto;
+
+  }
+
+
+
+.Personaje {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+
+  .Personaje2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 165vh;
+    margin-bottom: 4vh;
+    background-color: #000000;
+  }
+
+  .BloqueP2 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    flex: 1;
+  }
+
+.NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  }
+
+  .Galeria3a {
+    height: 100%;
+    background-color: #ffffffff;
+    margin: 0;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    flex: 8;
+   /* overflow: scroll;*/
+  }
+  .Galeria3b {
+    height: 70%;
+    background-color: #ffffffff;
+    margin-top: 6.2%;
+
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    flex: 5;
+   /* overflow: scroll;*/
+  }
+
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 2.4;
+    transition: all 1s ease;
+  }
+.fotoP2:hover {
+    background-image: url('img/3d/008C2.png');
+    }
+
+
+ .Galeria7 {
+    width: 90%;
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin:  0 auto;
+    margin-bottom: 3vh;
+   /* justify-content: space-between*/
+  }
+
+
+.LetrasP{
+ width: auto;
+ height: auto;
+}
+
+
+.TituloAbout {
+    width: 100%;
+    height: 15vh;
+    background-color: #8283BC;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+
+.contenedorAbout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.8rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-right: 8vh;
+  }
+.blud {
+    flex: 1.5;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contenedorA1 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vh 0 15vh 0 ;
+    text-align: left;
+  }
+  footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+    height: 20vh;
+  }
+
+  footer .Iconos {
+    margin-bottom: 8vh;
+  }
+
+  footer .Iconos a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.75rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer .Iconos a:hover {
+    color: #888888;
+  }
+
+  footer .TextoFooter {
+    font-size: 1.1rem;
+  }
+
+#gallery33, #gallery34 {
+    margin-top: 3vh;
+  }
+
+  .Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4rem;
+    color: #000000;
+    margin-bottom: 2vh;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    padding: 10px 0;
+    margin-left: -5vh;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #888888;
+  }
+
+  body {
+    padding-top: 60px; /* Adjust for fixed header */
+  }
+
+  .portada{
+    height: 90vh;
+
+  background-size: contain;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;      
+    width: 100%;  
+    margin-bottom: -2.5vh;   
+    border-bottom: 10vh solid #000000; 
+  }
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+  margin-top: -25vh;
+  text-align: center;
+  flex-direction: column; 
+  display: inline-block;
+
+         /* espacio entre los elementos */
+}
+
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 9rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -7vh;
+  
+}
+
+.extratitulo {
+    width: 100%;
+    height: 5vh;
+    background-color: #000000;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 5vh;
+  }
+.contenidoicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2vh;
+  background-color: rgb(255, 255, 255);
+  gap: 2vh; /* Espacio entre los iconos */
+}
+.iconoblud1 {
+  width: 20vh;
+  height: 20vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconoblud2 {
+width: 20vh;
+  height: 20vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.extrasB{
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+    background-color: #000000;
+    margin: 0 auto;
+}
+.extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+
+
+    .skill-item {
+    margin-bottom: 2.5vh;
+    margin-top: 2vh;    
+    width: 100%;
+}
+
+
+.skill-header {
+    display: flex;           
+    justify-content: space-between; 
+    margin-bottom: 0.8vh;
+    font-family: "rubik mono one", sans-serif;
+    font-size: 2vh;          
+    color: black;            
+}
+
+
+.skill-percentage {
+    color: #000000;         
+}
+
+
+.skill-bar-bg {
+    width: 100%;            
+    height: 1.5vh;           
+    background-color: #e0e0e0;    
+    overflow: hidden;        
+}
+
+
+.skill-bar-fill {
+    height: 100%;
+    background-color: #8283BC; 
+       
+    
+    /* Animación al cargar */
+    animation: fillBar 1.5s ease-out forwards;
+    transform-origin: left;
+    transform: scaleX(0);    
+}
+
+/* animación */
+@keyframes fillBar {
+    to {
+        transform: scaleX(1); 
+    }
+}
+
+.TextoFooter2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5vh;
+  }
+
+@media(max-width: 950px){
+
+   header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+    padding: 10px 0;
+    margin-left: -5vh;
+  }
+  .blud{
+    display: none;
+  }
+  .texto {
+    margin-right: 0;
+    margin-left: 8vh;
+  }
+  .Asier {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 7rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2vh;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-right: 8vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+}
+
+@media(max-width: 1450px){
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 7rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2vh;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-right: 8vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+@media(max-width: 820px){
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-left: 8vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+    .extratitulo {
+    width: 70%;
+    height: 5vh;
+    background-color: #000000;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 5vh auto 5vh auto;
+  }
+  .iconoblud1 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .iconoblud2 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -12vh;
+  
+}
+
+  }
+
+
+}
+
+@media(max-width: 650px){
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-left: 8vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+  .iconoblud1 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .iconoblud2 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -12vh;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 0.7rem;
+    transition: color 0.3s ease;
+  }
+ 
+
+}
+@media(max-width: 820px){
+
+.texto5 {
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-left: 8vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+  .iconoblud1 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .iconoblud2 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -12vh;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 0.7rem;
+    transition: color 0.3s ease;
+  }
+  .contenedorA1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 0 15vh 0 ;
+    text-align: left;
+  }
+ 
+
+}
+@media(max-width: 590px){
+ .extratitulo {
+            width: 70%;
+            height: 5vh;
+            background-color: #000000;
+            align-self: center;
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 1.6rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 2px;
+            margin: 5vh auto 5vh auto;
+        }
+
+  
+.texto5 {
+  margin: 0 auto;
+  font-size: 3.2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+    margin-left: 8vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+  .iconoblud1 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .iconoblud2 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -12vh;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 0.52rem;
+    transition: color 0.3s ease;
+  }
+  .contenedorA1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 0 15vh 0 ;
+    text-align: left;
+  }
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8vh;
+    font-family: "rubik mono one", sans-serif;
+    font-size: 1.6vh;
+    color: black;
+   }
+
+}
+
+@media(max-width: 490px){
+ .extratitulo {
+            width: 70%;
+            height: 5vh;
+            background-color: #000000;
+            align-self: center;
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 1.6rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 2px;
+            margin: 5vh auto 5vh auto;
+        }
+
+  
+.texto5 {
+  margin: 0 auto;
+  font-size: 3.2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  line-height: 30vh;
+  color: rgb(0, 0, 0);
+  padding-top: 10vh;
+  
+}
+.Titulos {
+    width: 100%;
+    height: 20vh;
+    background-image: url(img/3d/banner.jpg);
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+
+  }
+.Asier {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+.texto {
+    font-family: 'Fjalla One', sans-serif;
+    color: #000000;
+    line-height: 1.4;
+    flex: 3;
+    text-align: justify;
+margin-left: 4vh;
+margin-right: 4vh;
+font-size: 1.6rem;
+
+  }
+.Galeria3a {
+    height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+  .Galeria3b {
+   height: 90%;
+    background-color: #ffffffff;
+    padding-left: 1.5vh;
+    padding-bottom: 3.4vh;
+    padding-right: 1.5vh;
+    margin-top: 2vh;
+    flex: 8;
+    overflow: scroll;
+  }
+.GaleriaB1 {
+    flex: 1;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 1vh;
+    overflow: scroll;
+    margin-bottom: 3vh;
+  }
+
+  .NombreP1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+  
+  }
+  .NombreP2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex: 1;
+    background-color: #000000;
+    margin: auto;
+ 
+  }
+  .fotoP1 {
+    height: 100%;
+    background-image: url('img/3d/EveB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+      display: none;
+  }
+  .fotoP2 {
+    height: 100%;
+    background-image: url('img/3d/008B2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex: 2.4;
+    transition: all 1s ease;
+       display: none;
+  }
+  .blud {
+    flex: 2;
+    background-image: url('img/3d/BludAboutA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .extratitulo2{
+    height: 2vh;
+    background-color: #ffffff;
+    align-self: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 4vh
+    }
+  .iconoblud1 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .iconoblud2 {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('img/iconoblud.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.texto6 {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  font-family: 'rubik mono one', sans-serif;
+  color: rgb(0, 0, 0);
+  margin-top: -12vh;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 0.52rem;
+    transition: color 0.3s ease;
+ 
+
+}
+}
+@media(max-width: 470px){
+body {
+   margin: 0 0;
+  }
+.texto{
+margin-left: 4vh;
+margin-right: 4vh;
+font-size: 1.6rem;
+}
+header{
+  margin-left: -6vh;
+  width: 120%;
+}
+  nav a {
+    font-size: 0.62rem;
+
+}
+    nav li {
+        margin: 0 4vh;
+    }
+}
+
+</style>
+<body>
+<div class="content-wrapper">
+ <!-- Inicio -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#3d-characters">3D Characters</a></li>
+        <li><a href="#3d-props">3D Props</a></li>
+        <li><a href="#2d-illustrations">2D Illustrations</a></li>
+        <li><a href="#video-editing">Video Editing</a></li>
+        <li><a href="#about-me">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div></div>
+<section class="portada"> 
+  <div class="contenedor">
+    <div class="texto5">SOYSETAA</div>
+    <div class="texto6">♣ ♥ 3D/2D ARTIST ♠ ♦</div>
+    <div class="contenidoicon">
+      <div class="iconoblud1"></div>
+      <div class="iconoblud2"></div>
+    </div>
+  </div>
+</section>
+<!-- Seccion 2 (3D Characters) -->
+<section class="seccion3DC">
+  <!-- Titulo -->
+  <div id="3d-characters" class="Titulos">♣ 3D Characters ♣</div>
+<!-- Personaje 1 Eve -->
+  <div class="Personaje">
+    <div class="BloqueP1">
+      <div class="NombreP1">
+        <div class="LetrasP">E</div>
+        <div class="LetrasP">V</div>
+        <div class="LetrasP">E</div>
+      </div>
+      <div class="Galeria3a">
+         <div id="gallery33" style="display:none;">
+    
+    <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/eve/a3.png"
+         data-videoid="znMeciUFnvo" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/eve/W1.jpg"
+         data-image="img/2d/eve/E2.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/eve/2B.jpg"
+         data-image="img/2d/eve/2A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+          src="img/2d/eve/4B.jpg"
+         data-image="img/2d/eve/4A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+        src="img/2d/eve/5B.jpg"
+         data-image="img/2d/eve/5A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/eve/6B.jpg"
+         data-image="img/2d/eve/6A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+          src="img/2d/eve/3B.jpg"
+         data-image="img/2d/eve/3A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/eve/234.png"
+         data-videoid="UAPgow5kViU" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+      <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/eve/8B.jpg"
+         data-image="img/2d/eve/8A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+  
+    <a href="http://unitegallery.net">
+    <img alt=""
+          src="img/2d/eve/7B.jpg"
+         data-image="img/2d/eve/7A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+           src="img/2d/eve/1B.jpg"
+         data-image="img/2d/eve/1A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+      </a>
+     
+  </div>
+
+      </div>
+      <div class="fotoP1"></div>
+    </div>
+     <div class="GaleriaB12">
+    </div>
+  </div>
+
+<!-- Personaje 2 Eve -->
+  <div class="Personaje2">
+    <div class="BloqueP2">
+      <div class="fotoP2"></div>
+      <div class="Galeria3b">
+         <div id="gallery34" style="display:none;">
+    
+    <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/008/1B.png"
+         data-videoid="StIE5geYfm4" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+        src="img/2d/008/a9.png"
+         data-image="img/2d/008/a9.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+        src="img/2d/008/a8.png"
+         data-image="img/2d/008/a8.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     </a>
+      <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/008/A1.png"
+         data-videoid="uGcTFddCjEI" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/008/A5.png"
+         data-videoid="qpH_AgnonJ8" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     </a>
+   <!-- <a href="http://unitegallery.net">
+    <img alt="Keys" 
+         data-type="youtube"
+         src="img/2d/008/A3.png"
+         data-videoid="cwPuqixmrr0" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>-->
+     <a href="http://unitegallery.net">
+    <img alt=""
+         data-type="youtube"
+         src="img/2d/008/A2.png"
+         data-videoid="ii4nqWUP-oM" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    
+     </a>
+   <!-- <a href="http://unitegallery.net">
+    <img alt="Keys"
+         data-type="youtube"
+         src="img/2d/008/A4.png"
+         data-videoid="nF5NNnSC_GE" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Keys"
+         data-type="youtube"
+         src="img/2d/008/a7.png"
+         data-videoid="ftY7tprt2BU" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>-->
+   
+  </div>
+      </div>
+      <div class="NombreP2">
+        <div class="LetrasP">0</div>
+        <div class="LetrasP">0</div>
+        <div class="LetrasP">8</div>
+      </div>
+    </div>
+   <div class="extrasG">
+    <div class="extratitulo">◆ EXTRAS ◆</div> 
+   </div>
+   <div class="GaleriaB1">
+    <div id="gallery4" style="display:none;">
+       <a href="http://unitegallery.net">
+    <img alt="Nova"
+       data-type="youtube"
+         src="img/2d/other/0A.png"
+         data-videoid="9SwU-5CWzFw" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Nova"
+         src="img/2d/other/1B.jpg"
+         data-image="img/2d/other/1A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Nova"
+        src="img/2d/other/2B.jpg"
+         data-image="img/2d/other/2A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Nova"
+           src="img/2d/other/3B.jpg"
+         data-image="img/2d/other/3A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Nova"
+       data-type="youtube"
+         src="img/2d/other/4B.jpg"
+         data-videoid="neipItd7IMc" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Arcane Character"
+        data-type="youtube"
+         src="img/2d/arcane/6A.png"
+         data-videoid="05kWoA2fR7o" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Arcane Character"
+           src="img/2d/arcane/1A.jpg"
+         data-image="img/2d/arcane/1A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Arcane Character"
+            src="img/2d/arcane/2A.jpg"
+         data-image="img/2d/arcane/2A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Arcane Character"
+           src="img/2d/arcane/7A.jpg"
+         data-image="img/2d/arcane/7A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Arcane Character"
+           src="img/2d/arcane/García_AsierConstrucion.png"
+         data-image="img/2d/arcane/García_AsierConstrucion.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Lupa"
+         data-type="youtube"
+         src="img/2d/lupa/6A.png"
+         data-videoid="AKxiLbKv6qk" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Lupa"
+           src="img/2d/lupa/2A.png"
+         data-image="img/2d/lupa/2A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Lupa"
+           src="img/2d/lupa/3A.png"
+         data-image="img/2d/lupa/3A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Lupa"
+           src="img/2d/lupa/4A.png"
+         data-image="img/2d/lupa/4A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Lupa"
+           src="img/2d/lupa/5A.png"
+         data-image="img/2d/lupa/5A.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+  </div>
+    </div>
+<!-- Extra -->
+  <div class="GaleriaExtra">
+  </div>
+</section>
+<!-- Seccion 1 (Props) -->
+<div class="seccion1">
+  <!-- Titulo -->
+  <div id="3d-props" class="Titulos">♥ 3D Props ♥</div>
+  <!-- Contenido Jquery 1 -->
+  <div class="Galeria1">
+  <div id="gallery2" style="display:none;">
+  
+    <img alt="Hammer"
+       src="img/2d/props/A1.png"
+       data-image="img/2d/props/A1.png"
+       data-description="">
+    
+    <img alt="Nyx Sword"
+       src="img/2d/props/A2.png"
+       data-image="img/2d/props/A2.png"
+       data-description="">
+
+      <img alt="Nyx Spear"
+       src="img/2d/props/A3.png"
+       data-image="img/2d/props/A3.png"
+       data-description="">
+    
+     <img alt="Big Sword"
+       src="img/2d/props/A4.png"
+       data-image="img/2d/props/A4.png"
+       data-description="">
+
+         <img alt=""
+       src="img/2d/props/A5.png"
+       data-image="img/2d/props/A5.png"
+       data-description="">
+
+       
+  </div>
+  </div>
+  <!-- Contenido Jquery 2 -->
+   <div class="extrasG">
+    <div class="extratitulo2">◆ EXTRAS ◆</div> 
+   </div>
+  <div class="Galeria2">
+    <div id="gallery" style="display:none;">
+    
+    <a href="http://unitegallery.net">
+    <img alt="Hammer"
+         src="img/2d/props/B1.jpg"
+         data-image="img/2d/props/B1.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Hammer"
+         src="img/2d/props/B2.jpg"
+         data-image="img/2d/props/B2.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         src="img/2d/props/B3.jpg"
+         data-image="img/2d/props/B3.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         data-type="youtube"
+         src="img/2d/props/B4.png"
+         data-videoid="S2mYxMRqCW0" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         src="img/2d/props/B5.jpg"
+         data-image="img/2d/props/B5.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         data-type="youtube"
+         src="img/2d/props/BB7.jpg"
+         data-videoid="BKKT51LFpHo" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         data-type="youtube"
+         src="img/2d/props/BB8.jpg"
+         data-videoid="vQon-Hr0pDM" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Poolrooms render"
+         src="img/2d/props/B9.jpg"
+         data-image="img/2d/props/B9.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Blud"
+         src="img/2d/props/B10.jpg"
+         data-image="img/2d/props/B10.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Blud"
+         data-type="youtube"
+         src="img/2d/props/BB11.jpg"
+         data-videoid="HoC_-OTsNro" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Blud"
+         src="img/2d/props/B12.jpg"
+         data-image="img/2d/props/B12.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     <a href="http://unitegallery.net">
+    <img alt="Digital"
+         data-type="youtube"
+         src="img/2d/props/BB13.jpg"
+         data-videoid="seFrVlwfp_8" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     <a href="http://unitegallery.net">
+    <img alt="Chalet"
+         data-type="youtube"
+         src="img/2d/props/BB14.jpg"
+         data-videoid="QJx9zo9wt4E" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Bedroom"
+         src="img/2d/props/B15.jpg"
+         data-image="img/2d/props/B15.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+
+    <a href="http://unitegallery.net">
+    <img alt="Web core"
+         data-type="youtube"
+         src="img/2d/props/BB16.jpg"
+         data-videoid="BXC36Apltls" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Fran Fish"
+         src="img/2d/props/B17.jpg"
+         data-image="img/2d/props/B17.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Enemy"
+         src="img/2d/props/B18.jpg"
+         data-image="img/2d/props/B18.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Boat"
+         data-type="youtube"
+         src="img/2d/props/BB19.jpg"
+         data-videoid="oh02dAAT2ZI" 
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt="Assets for unreal"
+         src="img/2d/props/B20.jpg"
+         data-image="img/2d/props/B20.png"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+  </div>
+</div>
+</div>
+<!-- 2D Ilustracion -->
+<div>
+  <div id="2d-illustrations" class="Titulos">♦ 2D Illustrations ♦</div>
+   <div class="Galeria7">
+    <div id="gallery5" style="display:none;">
+
+      <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/8B.jpg"
+         data-image="img/2d/fotos/8A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/2B.jpg"
+         data-image="img/2d/fotos/2A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/3B.jpg"
+         data-image="img/2d/fotos/3A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/6B.jpg"
+         data-image="img/2d/fotos/6A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/12B.jpg"
+         data-image="img/2d/fotos/12A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/11B.jpg"
+         data-image="img/2d/fotos/11A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/18B.jpg"
+         data-image="img/2d/fotos/18A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/17B.jpg"
+         data-image="img/2d/fotos/17A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+     <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/13B.jpg"
+         data-image="img/2d/fotos/13A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+    
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/4B.jpg"
+         data-image="img/2d/fotos/4A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+     </a>
+    
+    <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/14B.jpg"
+         data-image="img/2d/fotos/14A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+   <a href="http://unitegallery.net">
+    <img alt=""
+         src="img/2d/fotos/10B.jpg"
+         data-image="img/2d/fotos/10A.jpg"
+         data-description="Those are keys"
+         style="display:none">
+    </a>
+
+  </div>
+</div>
+</div>
+
+ <!-- Video Editing -->
+ <div class="seccion1">
+  <!-- Titulo -->
+  <div id="video-editing" class="Titulos">♥ Video Editing ♥</div>
+  <!-- Contenido Jquery 1 -->
+  <div class="Galeria1">
+  <div id="gallery7" style="display:none;">
+  
+   
+     <img alt="Preview Image 1"
+       data-type="youtube"
+         src="img/2d/props/Captura de pantalla 2025-12-09 223557.jpg"
+         data-videoid="nlLt9mSyV4M" 
+       data-image="img/2d/props/Captura de pantalla 2025-12-09 223557.jpg"
+       data-description="Preview Image 1 Description">
+
+       <img alt="Preview Image 1"
+       data-type="youtube"
+         src="img/2d/props/Captura de pantalla 2025-12-09 222352.jpg"
+         data-videoid="w8XQfqhA_J0" 
+       data-image="img/2d/props/Captura de pantalla 2025-12-09 222352.jpg"
+       data-description="Preview Image 1 Description">
+    
+       <img alt="Preview Image 1"
+       data-type="youtube"
+         src="img/2d/props/Captura de pantalla 2025-12-09 225524.jpg"
+         data-videoid="Qn32bOgCTQI" 
+       data-image="img/2d/props/Captura de pantalla 2025-12-09 225524.jpg"
+       data-description="Preview Image 1 Description">
+
+  </div>
+  </div>
+</div>
+ <!-- About Me -->
+ <div>
+   <div id="about-me" class="Titulos">♠ About Me ♠</div>
+   <div class="contenedorA1">
+     <div class="Asier">
+       Hola soy Asier!
+     </div>
+     <div class="contenedorAbout">
+       <div class="texto" >
+         Soy un artista 3D/2D orientado al modelado 3D de personajes y props. Cada día sigo ampliando mis habilidades para mejorar mi técnica y llevar mi trabajo a un nivel más alto, explorando nuevas formas de crear y perfeccionar mis proyectos.
+         <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-title">Clip Studio Paint</span>
+            <span class="skill-percentage">100%</span>
+        </div>
+        <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 100%;"></div>
+        </div>
+    </div>  
+        
+
+    <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-title">Blender</span>
+            <span class="skill-percentage">90%</span>
+        </div>
+        <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-title">Premiere</span>
+            <span class="skill-percentage">85%</span>
+        </div>
+        <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 85%;"></div>
+        </div>
+    </div>
+    <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-title">DaVinci Resolve</span>
+            <span class="skill-percentage">80%</span>
+        </div>
+        <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+        </div>
+    </div>
+     <div class="skill-item">
+        <div class="skill-header">
+            <span class="skill-title">After Effects</span>
+            <span class="skill-percentage">75%</span>
+        </div>
+        <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="width: 75%;"></div>
+        </div>
+    </div>  
+          </div>
+
+      
+       <div class="blud"></div>
+     </div>
+   </div>
+ </div>
+<!-- Footer -->
+<footer>
+   <div class="Iconos">
+     <a href="https://www.linkedin.com/in/asier-garcía-6ab036350/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/soysetaa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+     <a href="https://x.com/soysetaa" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+   </div>
+    <div class="TextoFooter2">asier512y@gmail.com </div>
+   <div class="TextoFooter">©2025 SoySetaa </div>
+ </footer>
+</div>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script>
+
+  <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+    jQuery("#gallery2").unitegallery({
+        theme_panel_position: "right",
+        gallery_theme: "compact",
+        gallery_width: "100%",
+        gallery_height: "90%",
+        
+      });
+
+    });
+    
+  </script>
+  <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery3").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script>
+   <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery4").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script>
+ <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery5").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script>  
+   <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery33").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script>  
+    <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+      jQuery("#gallery34").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+    
+  </script> 
+
+  <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+    jQuery("#gallery9").unitegallery({
+        tiles_type:"justified",
+        gallery_width: "100%",
+      });
+
+    });
+      </script>
+     <script type="text/javascript">
+
+    jQuery(document).ready(function(){
+
+    jQuery("#gallery7").unitegallery({
+        theme_panel_position: "bottom",
+        gallery_theme: "compact",
+        gallery_width: "100%",
+        gallery_height: "90%",
+        
+      });
+
+    });
+    
+  </script>
+
+</body>
+</html>
